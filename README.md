@@ -3,28 +3,31 @@
 
 Bike Sharing Demand Prediction - Regression
 
+### **Project Summary**
+A bike-sharing system provides people with a sustainable mode of transportation and has beneficial effects for both the environment and the user. In recent days, Pubic rental bike sharing is becoming popular because of is increased comfortableness and environmental sustainability. Data used include Seoul Bike and Capital Bikeshare program data. Data have weather data associated with it for each hour. For the dataset, we are using linear regression model were train with optimize hyperparameters using a repeated cross validation approach and testing set is used for evaluation. Multiple evaluation indices such as Mean squared error , Root Mean Square error, r2 score,adjusted r2 score are use to measure the prediction performance of the regression models.
+
+
 ### **Problem Statement**
 Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes.
 
-https://th.bing.com/th/id/OIP.apLFpHUeS22Ut7DfGFq0NAHaE8?w=244&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7
+The main objective is to make predictive model, which could help them in predicting the bike demands proactively. This will help them in stable supply of bike wherever needed.
 
-Project Summary
-Bike Seoul is a bike sharing service in the city of Seoul, South Korea. It is part of the city's efforts to promote sustainable transportation and reduce traffic congestion. The service allows residents and visitors to rent bicycles at various stations across the city and return them to any other station, providing a convenient and eco-friendly mode of transportation. In recent years, the demand for bike rentals in Seoul has increased, leading to the need for a more efficient and effective way to manage the bike sharing operations. Accurately predicting bike demand is crucial for optimizing fleet management, ensuring the availability of bikes at high-demand locations, and reducing waste and costs.
-
-The main objective of this project is to develop a machine learning model that can accurately predict the demand for bike rentals in Seoul, South Korea, based on historical data and various relevant factors such as weather conditions, time of day, and public holidays. In this project we have used regression analysis techniques to model the bike demand data. The model trained on a large dataset of past bike rental information, along with relevant weather and time data. The model then be tested and evaluated using metrics such as mean squared error and r-squared values. The actual data is from the Seoul city government's open data portal, and this dataset is also available on Kaggle.
-
-So, our main goal was to achieve an accuracy of at least 85% in the bike demand predictions, which would help the city's bike sharing service providers plan their fleet operations more effectively and respond to demand changes in real-time. We have performed lots of regression algorithms like linear regression, decision tree,  also we tried to do hyperparameter tuning and cross validation to improve the accuracy of the model. And finally we have decided to select decision tree because it gave us high accuracy around 93% and 90% on train and test data resp.
-
-This project not only provided valuable insights into bike demand patterns in Seoul but also demonstrated the practical applications of machine learning in addressing real-world problems. The findings could potentially be extended to other cities with similar bike sharing systems, leading to improved services for bike users and more sustainable transportation systems.
-
-Conclusion
-The project successfully demonstrated the feasibility of using machine learning techniques to predict bike demand in Seoul.
-
-Some of the key points are:-
-
-High demand in the morning and evening.
-Less Demand in the winter season.
-Highest demand in june.
-Found multicollinearity between temperature and dew point temperature.
-Authors
-md rizwan khan
+### ***Approaches***
+we will break this endeavor into different parts-:
+### ***EDA***
+- In this i have created different charts like Bar, Kde, Histogram, Box, Heatmap and Pair Plot for getting insights from the data and based on that we can do some feature Engineering.
+- I also performed Hypothesis Testing based on our findings.
+### ***Feature Engineering & Data Pre-processing***
+- In this i Handled Missing Values, Outliers, Categorical Encoding.
+- Performed Feature Manipulation to minimize feature correlation and create new features.
+- Applied VIF to avoid avoid overfitting.
+- VIF value greater than 5 or 10 is considered to be high levels of multicollinearity, and variables with high VIF values may need to be removed from the model to improve its accuracy.
+- ***Data Transformation*** i used log transformation to transform data because in some of the columns our data is positively skewed and for positively skewed lof transformation is used.
+- ***Data Scaling*** I used MinMaxScaler.
+- MinMaxScaler is a popular feature scaling technique used to transform numerical features to a common scale. It scales the features to a fixed range (usually between 0 and 1) based on the minimum and maximum values of the features.
+- ***Data Splitting*** I used 80:20 data splitting ratio.
+- When we split our data into training and test sets, we're essentially creating two different datasets that we can use to test our model's performance. This can help us identify any issues with our data, such as outliers or missing values, and make our model more robust to these issues.
+  
+### ***ML Model Implementation***
+***ML Model - 1- Implemented Linear Regression***
+ - 
