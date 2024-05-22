@@ -1,4 +1,6 @@
 # Bike-sharing-demand-prediction
+![image](https://github.com/MDRIZWANKHAN/Bike-sharing-demand-prediction/assets/125923064/b7c4ce89-c1eb-4b58-9a2b-12fd76c33b9b)
+
 Bike Sharing Demand Prediction - Regression
 
 Problem Statement
