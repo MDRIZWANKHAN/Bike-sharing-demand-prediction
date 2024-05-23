@@ -12,7 +12,7 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 
 The main objective is to make predictive model, which could help them in predicting the bike demands proactively. This will help them in stable supply of bike wherever needed.
 
-### *** Variables Description***
+### ***Variables Description***
 - Date : year-month-day
 - Rented Bike count - Count of bikes rented at each hour
 - Hour - Hour of he day
