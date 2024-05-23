@@ -29,5 +29,23 @@ we will break this endeavor into different parts-:
 - When we split our data into training and test sets, we're essentially creating two different datasets that we can use to test our model's performance. This can help us identify any issues with our data, such as outliers or missing values, and make our model more robust to these issues.
   
 ### ***ML Model Implementation***
-***ML Model - 1- Implemented Linear Regression***
- - 
+ - I applied Linear Regression, Lasso, ridge, with Hyperparameter tuning but did not get good result.
+ - Finally i applied DecisionTree and got good result.
+ - DecisionTree(untuned) -: Achieve r2 score 0.85
+ - DecisionTree(tuned) -: Achieve r2 score 0.88
+ - I used ***SHAP Values(shapley Additive explanations)***  method for feature importance.
+
+### ***Conclusion***
+ - It has been observed that highest number of bikes rented required in Summer season followed by Autumn,Spring,Winter.
+More number of Rented Bike required on no holidays.
+- In the month of June demand of rented bike is more.
+- Average number of bikes rented in functioning day means when station is available for rented bikes is more than 700.
+- Average number of rented bikes in no holiday(approx more than 700) is more than the holiday(approx 500). Demand of rented bikes from night 12:00 AM to morning 
+  5:00 AM decreases in both holiday and no holiday, then after that demand in no holiday is always more than the holiday.
+- In holiday demand increases from morning 5:00 AM to evening 6:00PM then slightly dec.
+- The demand/hr is almost constant in winter,but there are two peaks has been observed at morning(7to9AM) and evening(5to7PM) may be due to office hr.
+  demand/hr in summer season is more as compared to other seasons.
+- In starting 2 weeks there is fluctuation in demand on working days as well as holidays.
+- After 2 weeks demand is more upto the end of the month on working days as compared to non working days.
+- There is a positive correlation between Rented bike count vs hour and Rented bike count vs Temperature.
+- I have choosen DecisionTree model which is hyperparameter optimized.i have tried many ml model but i didn't get r2 high as DecisionTree.
